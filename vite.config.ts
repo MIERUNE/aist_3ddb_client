@@ -31,7 +31,7 @@ import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/aist_3d_client/",
+  base: "/aist_3ddb_client/",
   plugins: [
     vue(),
     viteStaticCopy({
