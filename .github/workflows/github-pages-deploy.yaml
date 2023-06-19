@@ -36,6 +36,10 @@ jobs:
         with:
           node-version: 16
           cache: 'npm'
+      - name: Get a geoid GeoTIFF file by Geospatial Information Authority of Japan (via PROJ Datumgrid CDN)
+        run: |
+          wget https://cdn.proj.org/jp_gsi_gsigeo2011.tif
+          mv jp_gsi_gsigeo2011.tif ./public/proj
       - name: Install dependencies
         run: npm install
       - name: Build
